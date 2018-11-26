@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\usepackage{datenumber, fp}
+\usepackage{multicol}
+
+\newcounter{birth}%
+\newcounter{now}%
+
+\setmydatenumber{birth}{1993}{04}{07}%
+\setmydatenumber{now}{\the\year}{\the\month}{\the\day}%
+\FPsub\result{\thenow}{\thebirth}
+\FPdiv\myage{\result}{365.2425}
+
+
+\name{A. Mir} % Your name
+%\address{123 Broadway \\ City, State 12345} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
+
+\begin{document}
+
+\begin{rSection}{Personal Detail}
+
+\begin{multicols}{2}
+Age: \FPtrunc\myage{\myage}{0}\myage\\
+Linkedin profile: linkedin.com/in/mir93 \\
+GitHub profile: github.com/mir-am \\
+\columnbreak
+E-mail: mir-am@hotmail.com \\
+Website: mirblog.me\\
+
+\end{multicols}
+
+%\begin{center}
+%\begin{minipage}[t]{0.50\textwidth}
+	%\raggedright
+	%First Name:
+	
+	
+%\end{minipage}%
+%\begin{minipage}[t]{0.50\textwidth}
+	%\raggedleft
+	%Middle Name:  \\
+
+	
+%\end{minipage}
+%\begin{minipage}[t]{0.30\textwidth}
+%	\raggedleft
+%	%Last Name: Mir \\
+%\end{minipage}%	
+
+%\end{center}	
+
+
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Islamic Azad University} \hfill {Feb. 2016 - Present} \\ 
+M.Sc in Computer Science  \\
+Minor in Artificial Intelligence \& Machine Learning  \smallskip \\
+Thesis subject: Robust Twin Support Vector Machine for Noisy Data \\
+Overall GPA: 3.41 out of 4
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{Iranian Research Institute for Information Science and Technology }{July 2017 - Present}{Research Asistant at Machine Learning and Text Mining Lab }{Tehran, Iran}
+\item Designed and implemented machine learning algorithms in C++ and Python.
+\item Published a refereed machine learning research paper in the Journal of Applied Intelligence.
+\item Developed LightTwinSVM program for the research and classification tasks.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\end{rSection}
+
+% Publication
+\begin{rSection}{Publication}
+
+\begin{itemize}
+	\item Mir, A., \& Nasiri, J. A. (2018). KNN-based least squares twin support vector machine for pattern classification. Applied Intelligence, 1-14.
+\end{itemize}
+		
+\end{rSection}
+
+\begin{rSection}{Projects}
+	
+	{\bf LightTwinSVM} \hfill { https://github.com/mir-am/LightTwinSVM} \\ 
+	Simple and fast implementation of standard TwinSVM classifer  \\
+	
+	\begin{itemize}
+	\item A simple console program for running TwinSVM classifier
+	\item The clipDCD algorithm was improved and is implemented in C++ for solving optimization problems of TwinSVM.
+	\item Linear, RBF kernel and Rectangular are supported.
+	\item Binary and Multi-class classification (One-vs-All \& One-vs-One) are supported.
+	\item It supports grid search over C and gamma parameters.
+	\item Detailed classification result will be saved in a spreadsheet file.
+
+	\end{itemize}
+	
+\end{rSection}
+
+% Research Interests
+\begin{rSection}{Research Interests}
+	
+	\begin{itemize}
+		\item Machine Learning
+		\item Pattern Recognition
+		\item Natural Language Processing
+	\end{itemize}
+	
+\end{rSection}
+
+\newpage
+% Language test scores
+\begin{rSection}{Languages}
+	
+	\begin{itemize}
+		\item English
+		\item Persian 
+	\end{itemize}
+	
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python, C, Modern C++,\\
+Operating Systems & Linux (Ubuntu), Windows  \\
+Databases & MySQL, Microsoft SQL \\
+Source Control & Git, GitHub \\
+Typesetting & LaTeX
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
