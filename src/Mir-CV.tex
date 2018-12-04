@@ -23,9 +23,11 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\usepackage{hyperref}
 \usepackage{datenumber, fp}
 \usepackage{multicol}
+\usepackage{bibentry}
+%\makeatletter\let\saved@bibitem\@bibitem\makeatother
+%\usepackage{hyperref}
 
 \newcounter{birth}%
 \newcounter{now}%
@@ -42,6 +44,8 @@
 %\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
 
 \begin{document}
+\nobibliography{ref}
+\bibliographystyle{plain}
 
 \begin{rSection}{Personal Detail}
 
@@ -49,6 +53,7 @@
 Age: \FPtrunc\myage{\myage}{0}\myage\\
 Linkedin profile: linkedin.com/in/mir93 \\
 GitHub profile: github.com/mir-am \\
+\vfill\null
 \columnbreak
 E-mail: mir-am@hotmail.com \\
 Website: mirblog.me\\
@@ -111,11 +116,15 @@ Overall GPA: 3.41 out of 4
 
 % Publication
 \begin{rSection}{Publication}
-
+\subsection*{Journals}
 \begin{itemize}
 	\item Mir, A., \& Nasiri, J. A. (2018). KNN-based least squares twin support vector machine for pattern classification. Applied Intelligence, 1-14.
 \end{itemize}
-		
+
+\subsection*{Conferences}
+\begin{itemize}
+	\item \bibentry{mir2017}
+\end{itemize}	
 \end{rSection}
 
 \begin{rSection}{Projects}
@@ -146,7 +155,6 @@ Overall GPA: 3.41 out of 4
 	
 \end{rSection}
 
-\newpage
 % Language test scores
 \begin{rSection}{Languages}
 	
