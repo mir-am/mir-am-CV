@@ -29,6 +29,7 @@
 %\makeatletter\let\saved@bibitem\@bibitem\makeatother
 %\usepackage{hyperref}
 
+% Definitions
 \newcounter{birth}%
 \newcounter{now}%
 
@@ -36,6 +37,8 @@
 \setmydatenumber{now}{\the\year}{\the\month}{\the\day}%
 \FPsub\result{\thenow}{\thebirth}
 \FPdiv\myage{\result}{365.2425}
+
+\newcommand{\perspaper}{[\textbf{in Persian}]}
 
 
 \name{A. Mir} % Your name
@@ -118,16 +121,19 @@ Overall GPA: 3.41 out of 4
 \begin{rSection}{Publication}
 \subsection*{Journals}
 \begin{itemize}
-	\item Mir, A., \& Nasiri, J. A. (2018). KNN-based least squares twin support vector machine for pattern classification. Applied Intelligence, 1-14.
+	\item \bibentry{mirjul2018}
+	\item \bibentry{mirnov2018} \perspaper
 \end{itemize}
 
 \subsection*{Conferences}
 \begin{itemize}
-	\item \bibentry{mirfeb2018}
-	\item \bibentry{mirsep2017}
-	\item \bibentry{mirjul2017}
+	\item \bibentry{mirfeb2018} \perspaper
+	\item \bibentry{mirsep2017} \perspaper
+	\item \bibentry{mirjul2017} ] \perspaper
 \end{itemize}	
 \end{rSection}
+
+\clearpage
 
 \begin{rSection}{Projects}
 	
