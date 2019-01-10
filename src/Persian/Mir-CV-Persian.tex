@@ -6,8 +6,8 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 %\usepackage{datenumber, fp}
 \usepackage{multicol}
-%\usepackage{bibentry}
-%\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
 %\usepackage{hyperref}
 
 \usepackage{xepersian}
@@ -35,8 +35,8 @@
 %\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
 
 \begin{document}
-%\nobibliography{ref}
-%\bibliographystyle{plain}
+\nobibliography{ref}
+\bibliographystyle{ieeetr-fa}
 
 
 \begin{rSection}{اطلاعات تماس}
@@ -87,14 +87,14 @@
 %%----------------------------------------------------------------------------------------
 
 \begin{rSection}{سوابق شغلی}
-\def\jobtitle{دستیار پژوهشی}
+\def\jobtitle{دستیار پژوهشی در آزمایشگاه یادگیری ماشین و متن کاوی}
 \def\employername{پژوهشگاه علوم و فناوری اطلاعات ایران (ایرانداک)}
 \def\years{تیر ۹۶ - اکنون}
 \def\location{تهران، ایران}
 
 \begin{rSubsection}{\employername}{\years}{\jobtitle}{\location}
 
-\textbf{فعالیت و دستاورد‌ها}
+\textbf{فعالیت و دستاوردها:}
 \item چاپ یک مقاله \lr{ISI}، یک مقاله علمی - پژوهشی و سه مقاله کنفرانسی (\lr{ISC}) در زمینه‌های یادگیری ماشین، پردازش زبان طبیعی و آموزش الکترونیکی
 \item طراحی و پیاده‌سازی الگوریتم‌های یادگیری ماشین در زبان \lr{Python} و \lr{C++}
 \item توسعه نرم‌افزار \lr{LightTwinSVM} برای حل کردن مسائل دسته‌بندی توسط پژوهشگران و دانشجویان
@@ -110,11 +110,19 @@
 %
 %% Publication
 \begin{rSection}{سوابق علمی و پژوهشی}
-\subsubsection*{مقالات چاپ شده در مجلات}
-%\begin{itemize}
-%	\item \bibentry{mirjul2018}
-%	\item \bibentry{mirnov2018} \perspaper
-%\end{itemize}
+\small\textbf{مقالات چاپ شده در مجلات \lr{ISI}}
+\begin{latin}
+\begin{itemize}
+	\item \bibentry{mirjul2018}
+	%\item \bibentry{mirnov2018} \perspaper
+\end{itemize}
+\end{latin}
+
+\small\textbf{مقالات چاپ شده در مجلات علمی-پژوهشی}
+\begin{itemize}
+	\item \bibentry{mir2nov2018}
+\end{itemize}
+
 %
 %\subsection*{Conferences}
 %\begin{itemize}
