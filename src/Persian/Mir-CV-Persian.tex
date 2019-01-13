@@ -6,6 +6,8 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 %\usepackage{datenumber, fp}
 \usepackage{multicol}
+\usepackage{booktabs}
+%\usepackage[inline]{enumitem}
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
 %\usepackage{hyperref}
@@ -14,11 +16,12 @@
 
 % Xepersian settings
 \settextfont[Scale=1.4]{XB Niloofar}
-\setlatintextfont[Scale=1]{Times New Roman}
+\setlatintextfont[Scale=1.2]{Times New Roman}
 \setdigitfont[Scale=1.2]{XB Niloofar}
 
 % Definitions
 \renewcommand\labelitemi{-}
+\renewcommand{\arraystretch}{1.5} % Space between rows in a table
 %\newcounter{birth}%
 %\newcounter{now}%
 %
@@ -51,14 +54,12 @@
 \columnbreak
 موبایل: 09361819828 \\
 وب‌سایت شخصی: \lr{www.mirblog.me}\\
-%
 \end{multicols}
 \end{rSection}
-
+~\\[-2cm]
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
+%---------------------------------------------------------------------------------------
 \begin{rSection}{سوابق تحصیلی}
 
 {\textbf{دانشگاه آزاد اسلامی - واحد تهران شمال}} \hfill {بهمن ۹۴ - بهمن ۹۷} \\ 
@@ -66,7 +67,7 @@
 گرایش هوش مصنوعی \smallskip \\
 عنوان پایان‌نامه: مقاوم‌سازی ماشین بردار پشتیبان دو قلو در برابر داده‌های نویزی \\
 معدل کل: $17.06$ \\
-دروس گذرانده: مبانی هوش مصنوعی، یادگیری ماشین، شناسایی آماری الگو، رایانش تکاملی، شبکه‌های عصبی، پردازش تصویر، بینایی کامپیوتر، پردازش زبان طبیعی، تئوری بازی‌ها، روش تحقیق \\
+دروس گذرانده: مبانی هوش مصنوعی، یادگیری ماشین، شناسایی آماری الگو، رایانش تکاملی، شبکه‌های عصبی، پردازش تصویر، بینایی کامپیوتر، پردازش زبان طبیعی، تئوری بازی‌ها، روش تحقیق
 
 
 %Minor in Artificial Intelligence \& Machine Learning  \smallskip \\
@@ -77,7 +78,7 @@
 {\textbf{دانشگاه تهران}} \hfill {مهر ۹۰ - تیر ۹۴} \\
 کارشناسی \\
 پروژه نهایی: کاربرد زبان برنامه‌نویسی پایتون در آب ‌و ‌هواشناسی \\
-دروس گذارنده: ریاضیات گسسته، ساختمان داده، طراحی الگوریتم، مدار منطقی، زبان اسمبلی، سیستم عامل‌ها، معماری کامپیوتر، پایگاه‌داده، نظریه زبان‌ها و ماشین‌ها، طراحی و پیاده‌سازی زبان‌های برنامه‌نویسی \\
+دروس گذارنده: ریاضیات گسسته، ساختمان داده، طراحی الگوریتم، مدار منطقی، زبان اسمبلی، سیستم عامل‌ها، معماری کامپیوتر، پایگاه‌داده، نظریه زبان‌ها و ماشین‌ها، طراحی و پیاده‌سازی زبان‌های برنامه‌نویسی
 %B.Sc degree \\
 %Final project: Applications of Python Programming Language in Climatology \\ 
 %Courses: Discrete Mathematics, Data Structures, Algorithm Design, Digital Logic, Assembly Language, Operating Systems, Computer Architecture, Database Systems, Formal Languages and Automata, Design of Programming Languages
@@ -120,23 +121,27 @@
 \end{latin}
 
 \small\textbf{مقالات چاپ شده در مجلات علمی-پژوهشی}
+{\footnotesize
 \begin{itemize}
 	\item \bibentry{mirnov2018}
 \end{itemize}
+}
 
 \small\textbf{مقالات ارائه شده در کنفرانس‌های \lr{ISC}}
+{\footnotesize
 \begin{itemize}
 	\item \bibentry{mirjul2017}
 	\item \bibentry{mirsep2017}
 	\item \bibentry{mirfeb2018}
 \end{itemize}
+}
 \end{rSection}
 
 \begin{rSection}{پروژه‌ها}
-	
 	{\textbf{نرم‌افزار \lr{LightTwinSVM}} } \hfill {\lr{https://github.com/mir-am/LightTwinSVM}} \\ 
-	پیاده‌سازی ساده و سریع دسته‌بند ماشین بردار پشتیبان دوقلو (\lr{TwinSVM})  \\
+	پیاده‌سازی ساده و سریع دسته‌بند ماشین بردار پشتیبان دوقلو (\lr{TwinSVM})
 	%\textbf{Features:}
+{\footnotesize
 	\begin{itemize}
 		\item خط فرمان ساده برای اجرای دسته‌بند \lr{TwinSVM}
 		\item بهبود و پیاده‌سازی الگوریتم \lr{clipDCD} در \lr{C++} برای حل کردن مسائل بهینه‌سازی دسته‌بند \lr{TwinSVM}
@@ -151,6 +156,7 @@
 %	\item It supports grid search over C and gamma parameters.
 %	\item Detailed classification result will be saved in a spreadsheet file.
 	\end{itemize}
+}
 	
 \end{rSection}
 
@@ -159,7 +165,7 @@
 %%----------------------------------------------------------------------------------------
 
 \begin{rSection}{مهارت‌های فنی}
-	
+{\small
 	\begin{tabular}{ @{} >{\bfseries}r @{\hspace{6ex}} l }
 		زبان‌های برنامه‌نویسی & \lr{Python, C, Modern C++} \\
 		سیستم‌عامل‌ها & \lr{Linux(Ubuntu), Windows} \\
@@ -172,28 +178,42 @@
 %		Source Control & Git, GitHub \\
 %		Typesetting & LaTeX
 	\end{tabular}
+}
 \end{rSection}
 %
 %% Research Interests
 \begin{rSection}{زمینه‌های پژوهش}
 	
-	\begin{itemize}
-		\item یادگیری ماشین
-		\item دسته‌بندی الگو‌ها
-		\item پردازش زبان طبیعی
-	\end{itemize}
+	\begin{multicols}{3}
+		\begin{itemize}
+			\item یادگیری ماشین
+			\item دسته‌بندی الگو‌ها
+			\item پردازش زبان طبیعی
+		\end{itemize}
+	\end{multicols}
+	
 	
 \end{rSection}
 %
 %% Language test scores
-%\begin{rSection}{Languages}
-%	
-%	\begin{itemize}
-%		\item English
-%		\item Persian 
-%	\end{itemize}
-%	
-%\end{rSection}
+\begin{rSection}{زبان‌های خارجی}
+	
+	\begin{table}[!h]
+		\centering
+		
+		\begin{tabular}{c| c c c c}
+			\toprule
+			& \multicolumn{4}{c}{مهارت‌ها} \\
+			 زبان & خواندن & نوشتن & شنیدن & مکالمه \\
+			\midrule
+			
+			انگلیسی & عالی & خوب & عالی & خوب \\
+			
+			\bottomrule
+		\end{tabular}
+	\end{table}
+	
+\end{rSection}
 %
 %
 %
