@@ -11,7 +11,6 @@
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
 %\usepackage{hyperref}
-
 \usepackage{xepersian}
 
 % Xepersian settings
@@ -164,44 +163,8 @@
 %%	TECHNICAL STRENGTHS SECTION
 %%----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.60\linewidth}
-\begin{rSection}{مهارت‌های فنی}
-	{\small
-		\begin{tabular}{ @{} >{\bfseries}r @{\hspace{6ex}} l }
-			زبان‌های برنامه‌نویسی & \lr{Python, C, Modern C++} \\
-			سیستم‌عامل‌ها & \lr{Linux(Ubuntu), Windows} \\
-			پایگاه داده & \lr{MySQL, Microsoft SQL} \\
-			سیستم \lr{ٰVersion Control} & \lr{Git, GitHub} \\
-			حروف‌چینی & \small{\LaTeX} \\
-			
-			%		Operating Systems & Linux (Ubuntu), Windows  \\
-			%		Databases & MySQL, Microsoft SQL \\
-			%		Source Control & Git, GitHub \\
-			%		Typesetting & LaTeX
-		\end{tabular}
-	}
-\end{rSection}
-
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.30\linewidth}
-	\begin{rSection}{زمینه‌های پژوهش}
-		{\normalsize
-			\begin{itemize}
-				\item یادگیری ماشین
-				\item دسته‌بندی الگو‌ها
-				\item پردازش زبان طبیعی
-			\end{itemize}
-		}
-		
-	\end{rSection}	
-\end{minipage}
-	
-
-%\begin{multicols}{2}
-%	%Age: \FPtrunc\myage{\myage}{0}\myage\\
-%\begin{rSection}{مهارت‌های فنی}
+%\begin{minipage}[t]{\linewidth}
+%	\begin{rSection}{مهارت‌های فنی}
 %	{\small
 %		\begin{tabular}{ @{} >{\bfseries}r @{\hspace{6ex}} l }
 %			زبان‌های برنامه‌نویسی & \lr{Python, C, Modern C++} \\
@@ -217,52 +180,60 @@
 %		\end{tabular}
 %	}
 %\end{rSection}
-%%\vfill\null
-%\columnbreak
-%\begin{rSection}{زمینه‌های پژوهش}
-%{\small
-%	\begin{itemize}
-%		\item یادگیری ماشین
-%		\item دسته‌بندی الگو‌ها
-%		\item پردازش زبان طبیعی
-%	\end{itemize}
-%}
-%	
-%\end{rSection}
-%
-%\end{multicols}
+%\end{minipage}
+%\hfill
+%\begin{minipage}[t]{\linewidth}
+%			\begin{rSection}{زمینه‌های پژوهش}
+%				\vspace*{2.5mm}
+%				{\normalsize
+%					\begin{itemize}
+%						\item یادگیری ماشین
+%						\item دسته‌بندی الگو‌ها
+%						\item پردازش زبان طبیعی
+%					\end{itemize}
+%				}
+%				
+%			\end{rSection}	
+%\end{minipage}
 
-%\begin{rSection}{مهارت‌های فنی}
-%{\small
-%	\begin{tabular}{ @{} >{\bfseries}r @{\hspace{6ex}} l }
-%		زبان‌های برنامه‌نویسی & \lr{Python, C, Modern C++} \\
-%		سیستم‌عامل‌ها & \lr{Linux(Ubuntu), Windows} \\
-%		پایگاه داده & \lr{MySQL, Microsoft SQL} \\
-%		سیستم \lr{ٰVersion Control} & \lr{Git, GitHub} \\
-%		حروف‌چینی & \small{\LaTeX} \\
-%	
-%%		Operating Systems & Linux (Ubuntu), Windows  \\
-%%		Databases & MySQL, Microsoft SQL \\
-%%		Source Control & Git, GitHub \\
-%%		Typesetting & LaTeX
-%	\end{tabular}
-%}
-%\end{rSection}
-%
-%% Research Interests
-%\begin{rSection}{زمینه‌های پژوهش}
-%	
-%	\begin{multicols}{3}
-%		\begin{itemize}
-%			\item یادگیری ماشین
-%			\item دسته‌بندی الگو‌ها
-%			\item پردازش زبان طبیعی
-%		\end{itemize}
-%	\end{multicols}
-%	
-%	
-%\end{rSection}
-%
+\setlength\columnsep{10pt}
+\begin{multicols}{2}
+\setlength{\parindent}{0pt}% No paragraph indent
+\begin{minipage}[t]{\linewidth}%
+	\begin{rSection}{مهارت‌های فنی}
+		{\small
+			\begin{tabular}{ @{} >{\bfseries}r @{\hspace{6ex}} l }
+				زبان‌های برنامه‌نویسی & \lr{Python, C, Modern C++} \\
+				سیستم‌عامل‌ها & \lr{Linux(Ubuntu), Windows} \\
+				پایگاه داده & \lr{MySQL, Microsoft SQL} \\
+				سیستم \lr{ٰVersion Control} & \lr{Git, GitHub} \\
+				حروف‌چینی & \small{\LaTeX} \\
+				
+				%		Operating Systems & Linux (Ubuntu), Windows  \\
+				%		Databases & MySQL, Microsoft SQL \\
+				%		Source Control & Git, GitHub \\
+				%		Typesetting & LaTeX
+			\end{tabular}
+		}
+	\end{rSection}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{\linewidth}%
+	\begin{rSection}{زمینه‌های پژوهش}
+		\vspace*{2.5mm}
+		{\normalsize
+			\begin{itemize}
+				\item یادگیری ماشین
+				\item دسته‌بندی الگو‌ها
+				\item پردازش زبان طبیعی
+			\end{itemize}
+		}
+		
+	\end{rSection}	
+\end{minipage}
+\end{multicols}
+
+
 %% Language test scores
 \begin{rSection}{زبان‌های خارجی}
 	
