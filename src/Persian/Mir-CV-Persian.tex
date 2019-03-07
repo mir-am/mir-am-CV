@@ -6,6 +6,7 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 %\usepackage{datenumber, fp}
 \usepackage{multicol}
+\usepackage{paracol}
 \usepackage{booktabs}
 %\usepackage[inline]{enumitem}
 \usepackage{bibentry}
@@ -65,7 +66,7 @@
 کارشناسی ارشد - مهندسی کامپیوتر \\
 گرایش هوش مصنوعی \smallskip \\
 عنوان پایان‌نامه: مقاوم‌سازی ماشین بردار پشتیبان دو قلو در برابر داده‌های نویزی \\
-معدل کل: $17.06$ \\
+معدل کل: $17.61$ - نمره پایان‌نامه: $20$ (درجه عالی) \\
 دروس گذرانده: مبانی هوش مصنوعی، یادگیری ماشین، شناسایی آماری الگو، رایانش تکاملی، شبکه‌های عصبی، پردازش تصویر، بینایی کامپیوتر، پردازش زبان طبیعی، تئوری بازی‌ها، روش تحقیق
 
 
@@ -196,43 +197,53 @@
 %			\end{rSection}	
 %\end{minipage}
 
-\setlength\columnsep{10pt}
-\begin{multicols}{2}
-\setlength{\parindent}{0pt}% No paragraph indent
-\begin{minipage}[t]{\linewidth}%
-	\begin{rSection}{مهارت‌های فنی}
-		{\small
-			\begin{tabular}{ @{} >{\bfseries}r @{\hspace{6ex}} l }
-				زبان‌های برنامه‌نویسی & \lr{Python, C, Modern C++} \\
-				سیستم‌عامل‌ها & \lr{Linux(Ubuntu), Windows} \\
-				پایگاه داده & \lr{MySQL, Microsoft SQL} \\
-				سیستم \lr{ٰVersion Control} & \lr{Git, GitHub} \\
-				حروف‌چینی & \small{\LaTeX} \\
-				
-				%		Operating Systems & Linux (Ubuntu), Windows  \\
-				%		Databases & MySQL, Microsoft SQL \\
-				%		Source Control & Git, GitHub \\
-				%		Typesetting & LaTeX
-			\end{tabular}
-		}
-	\end{rSection}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{\linewidth}%
-	\begin{rSection}{زمینه‌های پژوهش}
-		\vspace*{2.5mm}
-		{\normalsize
-			\begin{itemize}
-				\item یادگیری ماشین
-				\item دسته‌بندی الگو‌ها
-				\item پردازش زبان طبیعی
-			\end{itemize}
-		}
-		
-	\end{rSection}	
-\end{minipage}
-\end{multicols}
+%\setlength\columnsep{10pt}
+%\begin{multicols}{2}
+%\setlength{\parindent}{0pt}% No paragraph indent
+%\begin{minipage}[t]{\linewidth}%
+%	
+%\end{minipage}
+%\hfill
+%\begin{minipage}[t]{\linewidth}%
+%	\begin{rSection}{زمینه‌های پژوهش}
+%		\vspace*{2.5mm}
+%		{\normalsize
+%			\begin{itemize}
+%				\item یادگیری ماشین
+%				\item دسته‌بندی الگو‌ها
+%				\item پردازش زبان طبیعی
+%			\end{itemize}
+%		}
+%		
+%	\end{rSection}	
+%\end{minipage}
+%\end{multicols}
 
+\begin{paracol}{2}
+\begin{rSection}{زمینه‌های پژوهش}
+	{\normalsize
+		\begin{itemize}
+			\item یادگیری ماشین
+			\item دسته‌بندی الگو‌ها
+			\item پردازش زبان طبیعی
+		\end{itemize}
+	}
+\end{rSection}
+
+\switchcolumn
+
+\begin{rSection}{مهارت‌های فنی}
+	{\small
+		\begin{tabular}{ @{} >{\bfseries}r @{\hspace{3.75ex}} l }
+			زبان‌های برنامه‌نویسی & \lr{Python, C, Modern C++} \\
+			سیستم‌عامل‌ها & \lr{Linux(Ubuntu), Windows} \\
+			پایگاه داده & \lr{MySQL, Microsoft SQL} \\
+			سیستم \lr{ٰVersion Control} & \lr{Git, GitHub} \\
+			حروف‌چینی & \small{\LaTeX} \\
+		\end{tabular}
+	}
+\end{rSection}	
+\end{paracol}
 
 %% Language test scores
 \begin{rSection}{زبان‌های خارجی}
