@@ -25,6 +25,8 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{datenumber, fp}
 \usepackage{multicol}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
 \usepackage{paracol} % For creating two columns environment
 \usepackage{bibentry} % For inserting bib items in CV
 %\makeatletter\let\saved@bibitem\@bibitem\makeatother
@@ -39,9 +41,16 @@
 \FPsub\result{\thenow}{\thebirth}
 \FPdiv\myage{\result}{365.2425}
 
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+
+% Page Style
+\pagestyle{fancy}
+\cfoot{\thepage\ of \pageref{LastPage}}
+
 \newcommand{\perspaper}{[\textbf{in Persian}]}
 
-\name{A. Mir} % Your name
+\name{Amir M. Mir} % Your name
 %\address{123 Broadway \\ City, State 12345} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 %\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
@@ -93,12 +102,14 @@ Google Scholar profile: scholar.google.com/citations?user=IZB4GI8AAAAJ\&hl
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
+{\bf Delft University of Technology} \hfill {Oct. 2019 - Present} \\
+PhD Candidate, Machine Learning for Software Engineering \\
 
-{\bf Islamic Azad University} \hfill {Feb. 2016 - Jan. 2019} \\ 
-M.Sc in Computer Science  \\
-Minor in Artificial Intelligence \& Machine Learning  \smallskip \\
-Thesis subject: Robust Twin Support Vector Machine for Noisy Data \hfill Thesis grade: 4/4 (A+)  \\
-Overall GPA: 3.52 out of 4 \\
+{\bf Islamic Azad University} (North Tehran Branch) \hfill {Feb. 2016 - Jan. 2019} \\ 
+M.Sc in Computer Engineering  \\
+Specialization in Artificial Intelligence \& Machine Learning  \smallskip \\
+Thesis subject: Robust Twin Support Vector Machine for Noisy Data \hfill \textbf{Thesis grade:} 4/4 (A+)  \\
+Overall \textbf{GPA}: 3.52 out of 4 \\
 Courses: Introduction to Artificial Intelligence, Artificial Neural Networks, Machine Learning, Statistical Pattern Recognition, Evolutionary Computation, Image Processing, Computer Vision, Natural Language Processing, Game Theory, Research Methodology \\
 
 {\bf University of Tehran} \hfill {Oct. 2011 - Jul. 2015} \\
@@ -113,14 +124,14 @@ Courses: Discrete Mathematics, Data Structures, Algorithm Design, Digital Logic,
 
 \begin{rSection}{Work Experience}
 
-\begin{rSubsection}{Iranian Research Institute for Information Science and Technology }{July 2017 - Present}{Research Assistant at Machine Learning and Text Mining Lab }{Tehran, Iran}
+\begin{rSubsection}{Iranian Research Institute for Information Science and Technology }{Jul. 2017 - Sep. 2019}{Research Assistant at Machine Learning and Text Mining Lab }{Tehran, Iran}
 	
 \textbf{Achievements and Contributions}
 \item Published two research papers in scholarly journals.
 \item Presented three research papers at international and national conferences.
 %\item Published a refereed machine learning research paper in the Journal of Applied %Intelligence.
 \item Designed and implemented machine learning algorithms in C++ and Python.
-\item Developed LightTwinSVM program for the research and classification tasks.
+\item Developed LightTwinSVM program and LIBTwinSVM library for the research and classification tasks.
 \item Taught students to do research and solve problems.
 \end{rSubsection}
 
@@ -132,6 +143,7 @@ Courses: Discrete Mathematics, Data Structures, Algorithm Design, Digital Logic,
 \begin{rSection}{Publication}
 \subsection*{Journals}
 \begin{itemize}
+	\item \bibentry{mir-JMLR}
 	\item \bibentry{mir2019}
 	\item \bibentry{mir2019joss}
 	\item \bibentry{mirjul2018}
@@ -157,7 +169,7 @@ Courses: Discrete Mathematics, Data Structures, Algorithm Design, Digital Logic,
 	\item The clipDCD algorithm was improved and implemented in C++ for solving optimization problems of TwinSVM.
 	\item Linear, RBF kernel and Rectangular are supported.
 	\item Binary and Multi-class classification (One-vs-All \& One-vs-One) are supported.
-	\item It supports grid search over C and gamma parameters.
+	\item It supports grid search over $C$ and gamma parameters.
 	\item Detailed classification result will be saved in a spreadsheet file.
 	\item Used continuous integration services (Travis CI \& AppVeyor) to build and test the program on Linux, OSX, and Windows systems.
 
@@ -172,9 +184,12 @@ Courses: Discrete Mathematics, Data Structures, Algorithm Design, Digital Logic,
 \begin{rSection}{Technical Skills}
 	
 	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+		Research & Planning, Data Collection, Evaluating Sources, \\
+		& Critical Thinking, Documenting and Reporting \\
 		Programming Languages & Python, C, Modern C++,\\
-		Software Development & Life Cycle, Clean Code, Debugging, Documentation, \\ 
-		& Continuous Integration, Profiling \\
+		Software Development &Life Cycle, Clean Code, Debugging, Documentation, \\
+		& Continuous Integration, Unit Testing, Profiling, Maintenance \\
+		Machine Learning Libraries & Scikit-learn, mlpack, Keras, TensorFlow \\
 		Operating Systems & Linux (Ubuntu), Windows  \\
 		Databases & MySQL, Microsoft SQL \\
 		Source Control & Git, GitHub \\
@@ -183,10 +198,12 @@ Courses: Discrete Mathematics, Data Structures, Algorithm Design, Digital Logic,
 	
 \end{rSection}
 
+\newpage
 \begin{paracol}{2}
 \begin{rSection}{Research Interests}
 	
 	\begin{itemize}
+		\item Software Engineering
 		\item Machine Learning
 		\item Pattern Classification
 		\item Natural Language Processing
@@ -204,6 +221,15 @@ Courses: Discrete Mathematics, Data Structures, Algorithm Design, Digital Logic,
 	
 \end{rSection}
 \end{paracol}
+
+\begin{rSection}{Certificates}
+	
+	\begin{itemize}
+		\item \textbf{Software Development Fundamentals}, Microsoft Virtual Academy - Mar. 2015
+		\item \textbf{Introduction to Programming with Python}, Microsoft Virtual Academy - Mar. 2015
+	\end{itemize}
+	
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
